@@ -44,8 +44,8 @@ Users should be able to:
 - Hover effects for the article preview
 - Tooltip for share icon
 - Context menu and inspect element disabled
-- [React](https://nodejs.org/en) - JS library
-- [Bootstrap](https://getbootstrap.com/) for tooltip functionality.
+- [Node Js](https://nodejs.org/en) - JS library
+- [Bootstrap](https://getbootstrap.com/) for tooltip functionality
 
 ## Installation
 1. Clone the repository:
