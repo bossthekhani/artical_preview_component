@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://github.com/bossthekhani/artical_preview_component)
-- Live Site URL: [Demo](https://your-live-site-url.com)
+- Live Site URL: [Demo](https://artical-preview-component-hazel.vercel.app/)
 
 ## My process
 
@@ -61,10 +61,10 @@ Users should be able to:
 Open `index.html` in your browser to view the article preview component.
 
 ### CSS
-The styles are defined in the `styles.css` file.
+The styles are defined in the `article.css` file.
 
 ### JavaScript
-The functionality for toggling share options and disabling inspect element is in the `script.js` file.
+The functionality for toggling share options and disabling inspect element is in the `article.js` file.
 
 ## Contributing
 Contributions are welcome! Please follow these steps to contribute:
