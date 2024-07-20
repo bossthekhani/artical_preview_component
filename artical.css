@@ -1,0 +1,214 @@
+/* styles.css */
+
+html {
+    user-select: none;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.article-preview {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    transition: box-shadow 0.3s;
+    border: 1px solid #ddd;
+}
+
+.article-preview:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.article-image-container {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.article-image {
+    width: 100%;
+    height: 300px;
+    display: block;
+}
+
+.article-content {
+    flex: 0 0 88.6667%;
+    max-width: 66.6667%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-title {
+    font-size: 1.5em;
+    color: hsl(217, 19%, 35%);
+    margin-bottom: 10px;
+}
+
+.article-description {
+    font-size: 13px;
+    color: hsl(214, 17%, 51%);
+    margin-bottom: 20px;
+}
+
+.article-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-top: 1px solid #ddd;
+    padding-top: 15px;
+    margin-top: 15px;  This comment code is for <hr> tag */
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+}
+
+.author-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.author-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.author-name {
+    font-size: 1em;
+    color: hsl(217, 19%, 35%);
+    font-weight: bold;
+}
+
+.article-date {
+    font-size: 13px;
+    color: hsl(212, 23%, 69%);
+}
+
+.share-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.share-icon {
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.share-options {
+    display: none;
+    flex-direction: row;
+    gap: 10px;
+    position: absolute;
+    bottom: 30px;
+    right: 5px;
+    background-color: hsl(217, 19%, 35%);
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+.share-options::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: 18px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid hsl(217, 19%, 35%);
+}
+
+.share-options span {
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.share-options .share-link {
+    display: inline-flex;
+    align-items: center;
+    color: hsl(210, 46%, 95%);
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.share-options .share-link i {
+    margin-right: 0;
+    margin-right: 6px;
+    font-size: 1.2em;
+}
+
+.share-options .share-link:hover {
+    text-decoration: none;
+}
+
+@media (min-width: 600px) {
+    .article-preview {
+        flex-direction: row;
+    }
+
+    .article-image-container {
+        flex: 1;
+    }
+
+    .article-content {
+        flex: 1;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .article-preview {
+        flex-direction: row;
+    }
+
+    .article-image-container,
+    .article-content {
+        padding: 0;
+    }
+
+    .article-content {
+        padding: 30px;
+    }
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 11px;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    border-top: 1px solid hsl(210, 46%, 95%);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: underline;
+}
